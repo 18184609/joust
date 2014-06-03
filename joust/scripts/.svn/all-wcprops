@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/joust/!svn/ver/86/trunk/scripts
+END
+schema.2011.sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/joust/!svn/ver/86/trunk/scripts/schema.2011.sqlite.sql
+END
+load.sqlite.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/joust/!svn/ver/10/trunk/scripts/load.sqlite.php
+END
+data.sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/joust/!svn/ver/10/trunk/scripts/data.sqlite.sql
+END
+load-seeding-teams.sqlite.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/joust/!svn/ver/10/trunk/scripts/load-seeding-teams.sqlite.php
+END
+load-data.sqlite.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/joust/!svn/ver/10/trunk/scripts/load-data.sqlite.php
+END
+schema.sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/joust/!svn/ver/83/trunk/scripts/schema.sqlite.sql
+END

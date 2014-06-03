@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/joust/!svn/ver/52/trunk/application/views/scripts/teams
+END
+delete.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/joust/!svn/ver/46/trunk/application/views/scripts/teams/delete.phtml
+END
+edit.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/joust/!svn/ver/52/trunk/application/views/scripts/teams/edit.phtml
+END
+index.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/34/trunk/application/views/scripts/teams/index.phtml
+END
+add.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/joust/!svn/ver/10/trunk/application/views/scripts/teams/add.phtml
+END

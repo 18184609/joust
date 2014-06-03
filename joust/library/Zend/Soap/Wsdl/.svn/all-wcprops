@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/joust/!svn/ver/10/trunk/library/Zend/Soap/Wsdl
+END
+Parser.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/joust/!svn/ver/10/trunk/library/Zend/Soap/Wsdl/Parser.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/joust/!svn/ver/10/trunk/library/Zend/Soap/Wsdl/Exception.php
+END
+CodeGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/joust/!svn/ver/10/trunk/library/Zend/Soap/Wsdl/CodeGenerator.php
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/joust/!svn/ver/10/trunk/library/Zend/XmlRpc/Server
+END
+Fault.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/joust/!svn/ver/10/trunk/library/Zend/XmlRpc/Server/Fault.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/joust/!svn/ver/10/trunk/library/Zend/XmlRpc/Server/Exception.php
+END
+Cache.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/joust/!svn/ver/10/trunk/library/Zend/XmlRpc/Server/Cache.php
+END
+System.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/joust/!svn/ver/10/trunk/library/Zend/XmlRpc/Server/System.php
+END

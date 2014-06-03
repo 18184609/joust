@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/joust/!svn/ver/10/trunk/library/Zend/Search
+END
+Lucene.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/joust/!svn/ver/10/trunk/library/Zend/Search/Lucene.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/joust/!svn/ver/10/trunk/library/Zend/Search/Exception.php
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/joust/!svn/ver/10/trunk/library/Zend/Gdata/Health
+END
+ProfileListEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/joust/!svn/ver/10/trunk/library/Zend/Gdata/Health/ProfileListEntry.php
+END
+ProfileListFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/joust/!svn/ver/10/trunk/library/Zend/Gdata/Health/ProfileListFeed.php
+END
+ProfileEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/joust/!svn/ver/10/trunk/library/Zend/Gdata/Health/ProfileEntry.php
+END
+ProfileFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/joust/!svn/ver/10/trunk/library/Zend/Gdata/Health/ProfileFeed.php
+END
+Query.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/joust/!svn/ver/10/trunk/library/Zend/Gdata/Health/Query.php
+END

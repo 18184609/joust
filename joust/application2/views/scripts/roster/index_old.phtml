@@ -1,0 +1,42 @@
+
+
+
+<table class="results">
+  <tr>
+   <th>Team Code</th>
+   <th>Organization</th>   
+   <th>S1 </th> 
+   <th>S2 </th> 
+   <th>S3 </th>
+   <th>Seed Avg</th> 
+   <th>Seed Rank</th>
+  </tr>
+
+ <!-- Loop through the entries that were provided to us by the controller -->
+ <? foreach ($this->roster as $entry): ?>
+  <tr>
+   <td style="text-align:left;"> <?= $this->escape($entry['code']) ?></td>
+   <td style="text-align:left;"> <?= $this->escape($entry['org'])  ?></td> 
+
+
+<!-- We dont want to display -2s for teams that haven't/don't run -->
+     <td> <?= (-2 == $entry['seed1']) ? '-' :($this->escape($entry['seed1'])) ?></td>   
+     <td> <?= (-2 == $entry['seed2']) ? '-' :($this->escape($entry['seed2'])) ?></td> 
+     <td> <?= (-2 == $entry['seed3']) ? '-' :($this->escape($entry['seed3'])) ?></td> 
+     <td> <?= (-1 > $entry['seedavg']) ? '-' :($this->escape($entry['seedavg'])) ?></td> 
+   <td><?= $this->escape($entry['seedrank']) ?></td> 
+   <td></td> 
+
+    <? endforeach ?>  
+
+</table>
+
+
+
+
+
+   
+
+
+
+

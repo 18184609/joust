@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/joust/!svn/ver/83/trunk/admin
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/joust/!svn/ver/83/trunk/admin/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/joust/!svn/ver/57/trunk/admin/index.php
+END

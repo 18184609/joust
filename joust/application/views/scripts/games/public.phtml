@@ -1,0 +1,70 @@
+
+
+<h2>On Deck Games</h2>
+
+<table>
+  <tr> 
+   <th>Round</th>  <th>Game </th> <th>On Deck</th> <th>Pink  </th>  <th>Teal  </th> <th>Victor</th> <th>Win to</th> <th>Loss to</th>
+  </tr>
+ <!-- Loop through the entries that were provided to us by the controller -->
+ <? foreach ($this->unplayed as $entry): ?>
+   <tr>
+<td><?= $this->escape($entry['round']) ?> <?= ( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] > 0) ? 'F' : '' ) ?></td> 
+   <td><?= $this->escape($entry['id']) ?></td> 
+   <td> -</td>
+   <td><?= $this->fullTeam( $entry['sidea'] ) ?></td> 
+   <td><?= $this->escape($entry['sideb']) ?> </td> 
+   <td><?= $this->escape($entry['victor']) ?></td> 
+      <td><?= $this->escape($entry['wgame']) ?> <?= $this->escape($entry['wside']) ?></td> 
+   <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']).'' . $this->escape($entry['lside']) : "" ?> </td> 
+   </tr>
+<? endforeach ?>  
+</table>
+   
+
+<h2>Unmatched Games</h2>
+
+<table>
+  <tr> 
+   <th>Round</th> <th>Game</th> <th>Pink</th> <th>Teal</th> <th>Victor</th> <th>Win to</th> <th>Loss to</th>
+  </tr>
+ <!-- Loop through the entries that were provided to us by the controller -->
+ <? foreach ($this->pending as $entry): ?>
+  <tr>
+  <td><?= $this->escape($entry['round']) ?> <?= ( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] > 0) ? 'F' : '' ) ?></td> 
+    <td><?= $this->escape($entry['id']) ?></td> 
+    <td><?= $this->fullTeam( $entry['sidea'] ) ?></td> 
+    <td><?= $this->escape($entry['sideb']) ?></td> 
+    <td><?= $this->escape($entry['victor']) ?></td> 
+    <td><?= $this->escape($entry['wgame']) ?> <?= $this->escape($entry['wside']) ?></td> 
+   <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']).'' . $this->escape($entry['lside']) : "" ?> </td> 
+  </tr>
+<? endforeach ?>  
+</table>
+
+
+
+<h2>Completed Games</h2>
+
+<table>
+  <tr> 
+    <th>Round</th>
+    <th>Game</th> <th>Pink</th> <th>Teal</th> 
+    <th>Victor</th> <th>Win to</th> <th>Loss to</th>
+  </tr>
+ <!-- Loop through the entries that were provided to us by the controller -->
+ <? foreach ($this->played as $entry): ?>
+  <tr>
+
+   <td><?= $this->escape($entry['round']) ?> <?= ( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] > 0) ? 'F' : '' ) ?>
+</td> 
+   <td><?= $this->escape($entry['id']) ?></td> 
+    <td><?= $this->escape($entry['sidea']) ?></td> 
+    <td><?= $this->escape($entry['sideb']) ?></td> 
+    <td><?= $this->escape($entry['victor']) ?></td> 
+    <td><?= $this->escape($entry['wgame']) ?> <?= $this->escape($entry['wside']) ?></td> 
+   <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']).'' . $this->escape($entry['lside']) : "" ?> </td> 
+  </tr>
+<? endforeach ?>  
+</table>
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/joust/!svn/ver/10/trunk/library/Zend/Uri
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/joust/!svn/ver/10/trunk/library/Zend/Uri/Exception.php
+END
+Http.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/joust/!svn/ver/10/trunk/library/Zend/Uri/Http.php
+END

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+</head>
+
+<body>
+<h1>Game N</h1>
+
+<form action="Bracket-4.html">
+<table>
+
+<p>A from Game X, B from Game Y
+  
+  <tr><th>Team A</th> <td>00-0000 Testing High</td></tr>
+  <tr><th>Team B</th> <td>00-0000 Testing High</td></tr>
+  <tr>
+    <th>Victor</th>
+    <td>
+      <select>
+	<option value="">unresolved</option>
+	<option value="">00-0000</option>
+	<option value="">00-0000</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<input type="submit" value="Submit">
+</form>
+
+<p>Winner to Game X, Loser to Game Y</p>
+
+
+
+</body>
+</html>

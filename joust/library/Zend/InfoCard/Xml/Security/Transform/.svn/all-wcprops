@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/joust/!svn/ver/10/trunk/library/Zend/InfoCard/Xml/Security/Transform
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/joust/!svn/ver/10/trunk/library/Zend/InfoCard/Xml/Security/Transform/Exception.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/joust/!svn/ver/10/trunk/library/Zend/InfoCard/Xml/Security/Transform/Interface.php
+END
+EnvelopedSignature.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/joust/!svn/ver/10/trunk/library/Zend/InfoCard/Xml/Security/Transform/EnvelopedSignature.php
+END
+XmlExcC14N.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/joust/!svn/ver/10/trunk/library/Zend/InfoCard/Xml/Security/Transform/XmlExcC14N.php
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/joust/!svn/ver/87/trunk/application/controllers
+END
+BackupController.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/joust/!svn/ver/44/trunk/application/controllers/BackupController.php
+END
+IndexController.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/28/trunk/application/controllers/IndexController.php
+END
+ErrorController.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/10/trunk/application/controllers/ErrorController.php
+END
+TeamsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/61/trunk/application/controllers/TeamsController.php
+END
+AlliancesController.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/joust/!svn/ver/87/trunk/application/controllers/AlliancesController.php
+END
+BracketController.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/joust/!svn/ver/64/trunk/application/controllers/BracketController.php
+END
+GamesController.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/64/trunk/application/controllers/GamesController.php
+END
+RosterController.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/joust/!svn/ver/79/trunk/application/controllers/RosterController.php
+END
+AwardsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/joust/!svn/ver/78/trunk/application/controllers/AwardsController.php
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/joust/!svn/ver/10/trunk/library/Zend/Service/Flickr
+END
+ResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/joust/!svn/ver/10/trunk/library/Zend/Service/Flickr/ResultSet.php
+END
+Result.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/joust/!svn/ver/10/trunk/library/Zend/Service/Flickr/Result.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/joust/!svn/ver/10/trunk/library/Zend/Service/Flickr/Image.php
+END

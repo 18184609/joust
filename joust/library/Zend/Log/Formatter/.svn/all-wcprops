@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/joust/!svn/ver/10/trunk/library/Zend/Log/Formatter
+END
+Simple.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/joust/!svn/ver/10/trunk/library/Zend/Log/Formatter/Simple.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/joust/!svn/ver/10/trunk/library/Zend/Log/Formatter/Interface.php
+END
+Xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/joust/!svn/ver/10/trunk/library/Zend/Log/Formatter/Xml.php
+END
+Firebug.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/joust/!svn/ver/10/trunk/library/Zend/Log/Formatter/Firebug.php
+END

@@ -1,0 +1,37 @@
+<?= $this->doctype() ?> <!-- Doctype  set inside the bootstrap file -->
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta http-equiv="Refresh" CONTENT="30">
+
+  <title>Botball Tournament</title>
+
+     <?= $this->headLink()->appendStylesheet($this->baseUrl().'/css/global.css', 'all') 
+     ->prependStylesheet($this->baseUrl().'/css/bracket.css', 'all') 
+     ->prependStylesheet($this->baseUrl().'/css/print.css', 'print'); ?>
+
+
+</head> 
+<body>
+
+<div id="header">
+	<h1><img src="../data/uploads/imgs/botball-logo.png" height="22"/> New Mexico Regional Tournament</h1>
+</div>
+
+<div id="navmenu">
+<ul>
+<li> <a href="<?= $this->baseUrl(); ?>/roster">Seeding and Onsite</a></li>
+<li> <a href="<?= $this->baseUrl(); ?>/games">DE Games </a></li>
+<li> <a href="<?= $this->baseUrl(); ?>/bracket">DE Bracket </a></li>
+</ul>
+</div>
+
+<div id="content">
+<?= $this->layout()->content ?>
+</div>
+
+<div id="footer">
+
+</div>
+</body>
+</html>

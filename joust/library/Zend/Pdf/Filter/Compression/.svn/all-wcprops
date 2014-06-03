@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/joust/!svn/ver/10/trunk/library/Zend/Pdf/Filter/Compression
+END
+Flate.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/joust/!svn/ver/10/trunk/library/Zend/Pdf/Filter/Compression/Flate.php
+END
+Lzw.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/10/trunk/library/Zend/Pdf/Filter/Compression/Lzw.php
+END

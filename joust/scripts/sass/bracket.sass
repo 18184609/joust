@@ -1,0 +1,180 @@
+!round_width = 6em
+// widht of bracket line
+!bracket_width = .2em
+!game_height = 2em
+
+.bracket
+  :font-size 14pt
+  :width 66em 
+
+// set the orientation of the winners and losers brackets
+  &#winners .round
+    :float left
+  &#consolation .round
+    :float right
+
+  .round
+    :width = !round_width
+
+    .game
+      :position relative
+      .game-number
+        :color blue
+        :position absolute
+        :height 1em
+      .team-a,.team-b
+        :position relative
+        :border-bottom
+          :width = !bracket_width
+          :style solid
+        .team-name
+          :overflow hidden
+          :position absolute
+          :bottom = !bracket_width/2
+          :height 1em
+          :font-size 70%
+    &.phase-0 .game .team-b
+      :border-right
+        :width .2em
+        :style solid
+    &.phase-1,&.phase-2
+      .game .team-b
+        :border-left
+          :width = !bracket_width
+          :style solid
+  .round.phase-0 .game 
+    .game-number
+      :right = (!bracket_width*2)
+    .team-a,.team-b
+      .team-name
+        :left = (!bracket_width)
+  .round.phase-1,.round.phase-2
+    .game 
+      .game-number
+        :left = (!bracket_width*2)
+      .team-a,.team-b
+        .team-name
+          :right = (!bracket_width)
+  .round#r1
+    .game
+      :height = !game_height + (!bracket_width*2)
+      .team-a,.team-b
+        :height = !game_height/2
+      .game-number
+        :bottom = !bracket_width*1.75
+  .round#r2
+    .game
+      :height = (!game_height*2) + (!bracket_width*4)
+      .team-a
+        :height = (!game_height * .75) + (!bracket_width/2)
+      .team-b
+        :height = (!game_height) + (!bracket_width)
+      .game-number
+        :bottom = (!bracket_width*2) + (!game_height/2)
+    &.phase-1 .game .game-number
+      :bottom = (!bracket_width*3) + (!game_height/2)
+    &.phase-2 .game 
+      .team-a
+        :height = (!game_height * 1.25) + (!bracket_width)
+      .game-number
+        :bottom = (!bracket_width/2) + (!game_height/4)
+  .round#r3
+    .game
+      :height = (!game_height*4) + (!bracket_width*8)
+      .team-a
+        :height = (!game_height * 1.25) + (!bracket_width*2)
+      .team-b
+        :height = (!game_height*2) + (!bracket_width*3)
+      .game-number
+        :bottom = (!bracket_width*4) + (!game_height*1.5)
+    &.phase-1 .game 
+      .team-a
+        :height = (!game_height*1.75) + (!bracket_width * 2)
+      .game-number
+        :bottom = (!game_height*1.5)
+    &.phase-2 .game 
+      .team-a
+        :height = (!game_height*.75)
+      .game-number
+        :bottom = (!game_height*2.5) + (!bracket_width * 2)
+  .round#r4
+    .game
+      :height = (!game_height*8) + (!bracket_width*16)
+      .team-a 
+        :height = (!game_height * 2.25) + (!bracket_width*4)
+      .team-b
+        :height = (!game_height*4) + (!bracket_width*7)
+      .game-number
+        :bottom = (!bracket_width*8) + (!game_height*3.5)
+    &.phase-1 .game 
+      .team-a
+        :height = (!game_height*1.75) + (!bracket_width * 2)
+      .game-number
+        :bottom = (!game_height*5) + (!bracket_width)
+    &.phase-2 .game 
+      .team-a
+        :height = (!game_height*3.75) + (!bracket_width*5)
+      .game-number
+        :bottom = (!game_height*2.75)
+  .round#r5
+    .game
+      :height = (!game_height*16) + (!bracket_width*32)
+      .team-a 
+        :height = (!game_height * 4.25) + (!bracket_width*8)
+      .team-b
+        :height = (!game_height*8) + (!bracket_width*15)
+      .game-number
+        :bottom = (!bracket_width*16) + (!game_height*7.5)
+    &.phase-1  .game 
+      .team-a
+        :height = (!game_height*5.75) + (!bracket_width*9)
+      .game-number
+        :bottom = (!game_height*7.25) + (!bracket_width)
+    &.phase-2 .game 
+      .team-a
+        :height = (!game_height*.75) + (!bracket_width*13)
+      .game-number
+        :bottom = (!game_height*12) + (!bracket_width*3)
+
+  .round#r6
+    .game
+      :height = (!game_height*32) + (!bracket_width*56)
+      .team-a
+        :height = (!game_height * 8.25) + (!bracket_width*16)
+      .team-b
+        :height = (!game_height*16) + (!bracket_width*32)
+      .game-number
+        :bottom = (!bracket_width*32) + (!game_height*15.5)
+    &.phase-1 .game 
+      .team-a
+        :height = (!game_height*5.75) + (!bracket_width*9)
+      .game-number
+        :bottom = (!game_height*20) + (!bracket_width*11)
+    &.phase-2 .game 
+      .team-a
+        :height = (!game_height*16) + (!bracket_width*2)
+      .game-number
+        :bottom = (!game_height*12)
+
+
+  .round#r7
+    .game
+      :height = (!game_height*32) + (!bracket_width*56)
+      .team-a
+        :height = (!game_height * 16.25) + (!bracket_width*32)
+      .team-b
+        :height = (!game_height*16) + (!bracket_width*32)
+      .game-number
+        :bottom = (!bracket_width*32) + (!game_height*15.5)
+    &.phase-1 .game 
+      .team-a
+        :height = (!game_height*5.75) + (!bracket_width*9)
+      .game-number
+        :bottom = (!game_height*20) + (!bracket_width*11)
+    &.phase-2 .game 
+      .team-a
+        :height = (!game_height*16) + (!bracket_width*2)
+      .game-number
+        :bottom = (!game_height*12)
+
+

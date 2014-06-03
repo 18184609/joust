@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/joust/!svn/ver/10/trunk/library/Zend/Feed
+END
+Element.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/joust/!svn/ver/10/trunk/library/Zend/Feed/Element.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/joust/!svn/ver/10/trunk/library/Zend/Feed/Exception.php
+END
+Atom.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/joust/!svn/ver/10/trunk/library/Zend/Feed/Atom.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/joust/!svn/ver/10/trunk/library/Zend/Feed/Abstract.php
+END
+Builder.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/joust/!svn/ver/10/trunk/library/Zend/Feed/Builder.php
+END
+Rss.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/joust/!svn/ver/10/trunk/library/Zend/Feed/Rss.php
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/joust/!svn/ver/83/trunk/application2/views/scripts/games
+END
+public.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/joust/!svn/ver/76/trunk/application2/views/scripts/games/public.phtml
+END
+edit.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/76/trunk/application2/views/scripts/games/edit.phtml
+END
+index.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/joust/!svn/ver/83/trunk/application2/views/scripts/games/index.phtml
+END
+add.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/joust/!svn/ver/76/trunk/application2/views/scripts/games/add.phtml
+END
+score.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/joust/!svn/ver/76/trunk/application2/views/scripts/games/score.phtml
+END

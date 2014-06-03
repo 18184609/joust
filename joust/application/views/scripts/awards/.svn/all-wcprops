@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/joust/!svn/ver/78/trunk/application/views/scripts/awards
+END
+special.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/joust/!svn/ver/33/trunk/application/views/scripts/awards/special.phtml
+END
+delete.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/joust/!svn/ver/78/trunk/application/views/scripts/awards/delete.phtml
+END
+edit.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/78/trunk/application/views/scripts/awards/edit.phtml
+END
+index.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/joust/!svn/ver/78/trunk/application/views/scripts/awards/index.phtml
+END
+add.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/joust/!svn/ver/75/trunk/application/views/scripts/awards/add.phtml
+END

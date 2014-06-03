@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/joust/!svn/ver/10/trunk/library/Zend/XmlRpc/Request
+END
+Http.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/joust/!svn/ver/10/trunk/library/Zend/XmlRpc/Request/Http.php
+END
+Stdin.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/joust/!svn/ver/10/trunk/library/Zend/XmlRpc/Request/Stdin.php
+END

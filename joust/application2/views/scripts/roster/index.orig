@@ -1,0 +1,91 @@
+<script language="JavaScript1.2">
+
+
+/*
+Advanced window scroller script-
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScripts here!
+*/
+
+var currentpos=0,alt=1,curpos1=0,curpos2=-1,scrollTimer
+function initialize(){
+setTimeout("startit()", 2500)
+}
+function scrollwindow(){
+if (document.all)
+temp=document.body.scrollTop
+else
+temp=window.pageYOffset
+if (alt==0)
+alt=1
+else
+alt=0
+if (alt==0)
+curpos1=temp
+else
+curpos2=temp
+if (curpos1!=curpos2){
+if (document.all)
+currentpos=document.body.scrollTop+1
+else
+currentpos=window.pageYOffset+1
+window.scroll(0,currentpos)
+}
+else{
+currentpos=0
+setTimeout("window.scroll(0,currentpos)", 2500)
+stopit()
+setTimeout("startit()", 5000);
+}
+}
+function startit(){
+scrollTimer = setInterval("scrollwindow()",100)
+}
+function stopit(){
+clearInterval(scrollTimer)
+}
+
+window.onload=initialize
+</script>
+
+
+
+<table class="results">
+  <tr>
+   <th>Team Code</th>
+   <th>Organization</th>   
+   <th>S1 </th> 
+   <th>S2 </th> 
+   <th>S3 </th>
+   <th>Seed Avg</th> 
+   <th>Seed Rank</th>
+  </tr>
+
+ <!-- Loop through the entries that were provided to us by the controller -->
+ <? foreach ($this->roster as $entry): ?>
+  <tr>
+   <td style="text-align:left;"> <?= $this->escape($entry['code']) ?></td>
+   <td style="text-align:left;"> <?= $this->escape($entry['org'])  ?></td> 
+
+
+<!-- We dont want to display -2s for teams that haven't/don't run -->
+     <td> <?= (-2 == $entry['seed1']) ? '-' :($this->escape($entry['seed1'])) ?></td>   
+     <td> <?= (-2 == $entry['seed2']) ? '-' :($this->escape($entry['seed2'])) ?></td> 
+     <td> <?= (-2 == $entry['seed3']) ? '-' :($this->escape($entry['seed3'])) ?></td> 
+     <td> <?= (-1 > $entry['seedavg']) ? '-' :($this->escape($entry['seedavg'])) ?></td>  
+   <td><?= $this->escape($entry['seedrank']) ?></td> 
+   <td></td> 
+
+    <? endforeach ?>  
+
+</table>
+
+
+
+
+
+   
+
+
+
+

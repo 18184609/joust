@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+</head>
+
+<body>
+<h1>Make Brackets</h1>
+
+
+<form action="Main2.html">
+<p>Select the number of brackets</p>
+<select><option>1</option></select>
+<input type="submit" value="Submit">
+</form>
+
+<h2>Notes:</h2>
+<p>I'm currently following Bracken in breaking things in to brackets
+of up to 16 teams each</p>
+
+
+
+</body>
+</html>

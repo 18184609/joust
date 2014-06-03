@@ -1,0 +1,15 @@
+
+<?php if ($this->alliance) :?> 
+<p>Are you sure that you want to delete <b>  
+   (<?= $this->escape($this->alliance->team1); ?> ) vs   (<?= $this->escape($this->alliance->team2); ?> )</b> ? 
+</p> 
+<form action="<?php echo $this->url(array('action'=>'delete')); ?>" method="post"> 
+<div> 
+  <input type="hidden" name="id" value="<?php echo $this->alliance->id; ?>" /> 
+  <input type="submit" name="del" value="Yes" /> 
+  <input type="submit" name="del" value="No" /> 
+</div> 
+</form> 
+<?php else: ?> 
+<p>Cannot find alliance.</p> 
+<?php endif;?> 

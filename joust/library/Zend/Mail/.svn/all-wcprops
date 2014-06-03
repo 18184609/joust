@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/joust/!svn/ver/10/trunk/library/Zend/Mail
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/joust/!svn/ver/10/trunk/library/Zend/Mail/Exception.php
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/joust/!svn/ver/10/trunk/library/Zend/Mail/Message.php
+END
+Storage.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/joust/!svn/ver/10/trunk/library/Zend/Mail/Storage.php
+END
+Part.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/joust/!svn/ver/10/trunk/library/Zend/Mail/Part.php
+END

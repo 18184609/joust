@@ -1,0 +1,15 @@
+
+<?php if ($this->award) :?> 
+<p>Are you sure that you want to delete <b>  
+<?= $this->escape($this->award->name);?></b> awarded to <b><?= $this->escape($this->award->team); ?></b> ? 
+</p> 
+<form action="<?php echo $this->url(array('action'=>'delete')); ?>" method="post"> 
+<div> 
+  <input type="hidden" name="id" value="<?php echo $this->award->id; ?>" /> 
+  <input type="submit" name="del" value="Yes" /> 
+  <input type="submit" name="del" value="No" /> 
+</div> 
+</form> 
+<?php else: ?> 
+<p>Cannot find award.</p> 
+<?php endif;?> 

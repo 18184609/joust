@@ -1,0 +1,65 @@
+<h2>Consolation Bracket </h2>
+<p>( <a href="<?= $this->baseUrl();?>/bracket">Click for main bracket.</a>) </p>  
+<p>( <a href="<?= $this->baseUrl();?>/bracket/finals">Click for finals bracket.</a>) </p>  
+
+<div class="bracket" id="consolation">
+   
+   <?  $round=2; // always sart with round 2 ?> 
+   <?  $consolation=1; // always sart with consolation 1 ?> 
+
+<div class="round phase-1" id="r2">
+
+<? foreach ($this->lgames as $game): ?>
+
+<?
+if($game->round > $round) {
+  $consolation=1; // if we go to a new round, then we're in phase 1 again
+  $round =$game->round;
+  echo "</div>";
+  echo "<div class=\"round phase-1\" id=\"r".$round."\">";
+} else if($game->consolation >$consolation) {
+  $consolation=2; 
+  echo "</div>";
+  echo "<div class=\"round phase-2\" id=\"r".$round."\">";
+} 
+
+
+?>
+
+<div class="game">
+   <? // prepend a quote before hacking off the back so substr won't return flase for games where  sidea or  sideb = "bye" ?>
+   <div class="team-a">
+   <div class="team-name">
+   <?= $this->escape( substr( " ".$game['sidea'], -4 ) );?>  <?= $this->escape( substr($game['sideaorg'], 0, 6) ); ?> 
+   </div>
+   </div>
+   
+   <div class="team-b"> 
+   <div class="team-name"><?= $this->escape( substr( " ".$game['sideb'], -4 ) );?>  <?= $this->escape( substr($game['sideborg'], 0, 6) ); ?> 
+   </div>
+   </div>
+   
+   <div class="game-number"> 
+  <?= $this->escape($game['id']); ?>
+   </div> 
+</div>
+
+<? endforeach ?> 
+</div> 
+<!-- end of the last round div -->
+
+
+
+<?  echo "<div class=\"round phase-1\" id=\"r". ($round+1) ."\">"; ?>
+<div class="game">
+   <div class="team-a"> 
+   <div class="team-name">
+   <?= $this->escape(     substr( " ".$game['victor'], -4)     );?> 
+   </div> 
+   </div>
+</div>
+
+
+
+
+</div> <!-- end of bracket -->

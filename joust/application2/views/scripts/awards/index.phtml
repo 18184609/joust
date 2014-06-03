@@ -1,0 +1,42 @@
+<h1>Special Awards List</h1>
+
+<table class="awards long-awards">
+<tr><td colspan="2"><h2 id="choice">Judges Choice Trophies</h2></td></tr>
+
+<tr><th>Award</th> <th>Team</th> <th>Notes</th></tr>
+
+ <? foreach ($this->trophies as $award): ?>
+<tr>   
+ <td><?= $this->escape($award['name']) ?></td> 
+ <td><?= $this->escape($award['team']) ?></td> 
+ <td><?= $this->escape($award['notes']) ?></td> 
+</tr>
+
+<? endforeach ?>
+</table>
+
+
+
+
+
+<table class="awards long-awards">
+<tr><td colspan="2"><h2 id="choice">Judges Choice Awards</h2></td></tr>
+
+<tr><th>Award</th> <th>Team</th> <th>Notes</th></tr>
+
+ <? foreach ($this->certificates as $award): ?>
+<tr>   
+ <td><?= $this->escape($award['name']) ?></td> 
+ <td><?= $this->escape($award['team']) ?></td> 
+ <td><?= $this->escape($award['notes']) ?></td> 
+</tr>
+<? endforeach ?>
+
+</table>
+
+
+<h2>Awards Admin</h2>
+<ul>
+  <li><a href="<?= $this->baseUrl();?>/awards/add">Add a New Award</a></li>
+  <li>Edit or Delete an Award</li>
+</ul>

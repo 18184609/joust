@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/joust/!svn/ver/87/trunk/application/forms
+END
+ScoreGameForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/joust/!svn/ver/10/trunk/application/forms/ScoreGameForm.php
+END
+TeamForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/joust/!svn/ver/74/trunk/application/forms/TeamForm.php
+END
+AllianceForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/joust/!svn/ver/87/trunk/application/forms/AllianceForm.php
+END
+GameForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/joust/!svn/ver/10/trunk/application/forms/GameForm.php
+END
+AwardForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/joust/!svn/ver/78/trunk/application/forms/AwardForm.php
+END
+DoubleElimForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/joust/!svn/ver/46/trunk/application/forms/DoubleElimForm.php
+END
+RosterUploadForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/joust/!svn/ver/34/trunk/application/forms/RosterUploadForm.php
+END

@@ -1,0 +1,64 @@
+<table class="awards">
+<tr><td colspan="2"> <h2 id="overall">Overall</h2></td></tr>
+<? foreach ($this->overallWinners as $winner): ?>
+<tr>
+    <th><?= $this->escape($winner['overallrank']) ?></th> 
+    <td><?= $this->escape($winner['org']) ?> (<?= $this->escape($winner['code']) ?> )</td>
+</tr> 
+<? endforeach ?> 
+
+
+
+<h2>Documentation</h2>
+
+<p>See BOPD list and Judges Choice for onsite</p>
+
+
+<table class="awards">
+<tr><td colspan="2"><h2 id="de">Double Elimination</h2></td></tr>
+<? foreach ($this->deWinners as $winner): ?>
+<tr>
+   <th><?= (4 >= $this->escape($winner['derank'] ) ? $this->escape($winner['derank'] ) : 'Finalist')  ?></th> 
+    <td><?= $this->escape($winner['org']) ?> (<?= $this->escape($winner['code']) ?> )</td>
+</tr> 
+<? endforeach ?>  
+</table>
+
+<table class="awards">
+<tr><td colspan="2"><h2 id="seeding">Seeding</h2></td></tr>
+<? foreach ($this->seedWinners as $winner): ?>
+<tr>
+    <th><?= $this->escape($winner['seedrank']) ?></th> 
+    <td><?= $this->escape($winner['org']) ?> (<?= $this->escape($winner['code']) ?> )</td>
+</tr> 
+<? endforeach ?>  
+</table>
+
+
+<hr>
+
+<h2>Raw Scores</h2>
+<table class="scores">
+
+<tr>
+<th>Team</th> 
+<th>Overall </th>   
+<th>Documentation</th>
+<th>Seeding </th>
+<th>Double Elim</th>
+</tr>
+
+<? foreach ($this->overall as $rawscores): ?>
+<tr>
+   <td><?= $this->escape($rawscores['code']) ?> </td>
+   <td><?= $this->escape($rawscores['overall']) ?> </td>
+   <td><?= $this->escape($rawscores['doc']) ?> </td>
+   <td><?= $this->escape($rawscores['seed']) ?> </td>
+   <td><?= $this->escape($rawscores['de']) ?> </td>
+</tr> 
+<? endforeach ?>  
+
+</table>
+
+
+

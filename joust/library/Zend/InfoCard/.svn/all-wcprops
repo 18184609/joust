@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/joust/!svn/ver/10/trunk/library/Zend/InfoCard
+END
+Cipher.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/joust/!svn/ver/10/trunk/library/Zend/InfoCard/Cipher.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/joust/!svn/ver/10/trunk/library/Zend/InfoCard/Exception.php
+END
+Claims.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/joust/!svn/ver/10/trunk/library/Zend/InfoCard/Claims.php
+END

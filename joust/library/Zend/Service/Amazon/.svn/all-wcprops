@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon
+END
+ResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/ResultSet.php
+END
+ListmaniaList.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/ListmaniaList.php
+END
+OfferSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/OfferSet.php
+END
+EditorialReview.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/EditorialReview.php
+END
+Item.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/Item.php
+END
+Offer.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/Offer.php
+END
+SimilarProduct.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/SimilarProduct.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/Image.php
+END
+Accessories.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/Accessories.php
+END
+CustomerReview.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/CustomerReview.php
+END
+Query.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/joust/!svn/ver/10/trunk/library/Zend/Service/Amazon/Query.php
+END

@@ -1,0 +1,15 @@
+
+<?php if ($this->team) :?> 
+<p>Are you sure that you want to delete <b>  
+   <?= $this->escape($this->team->org);?> (<?= $this->escape($this->team->code); ?>)</b> ? 
+</p> 
+<form action="<?php echo $this->url(array('action'=>'delete')); ?>" method="post"> 
+<div> 
+  <input type="hidden" name="code" value="<?php echo $this->team->code; ?>" /> 
+  <input type="submit" name="del" value="Yes" /> 
+  <input type="submit" name="del" value="No" /> 
+</div> 
+</form> 
+<?php else: ?> 
+<p>Cannot find team.</p> 
+<?php endif;?> 

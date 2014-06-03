@@ -1,0 +1,63 @@
+BEGIN;
+delete from teams;
+
+INSERT INTO teams (code, org, email)  VALUES( '09-0001', 'DeWitt Perry Middle School', 'culpd@cfbisd.edu');
+INSERT INTO teams (code, org, email)  VALUES( '09-0002', 'DeWitt Perry Middle School', 'culpd@cfbisd.edu');
+INSERT INTO teams (code, org, email)  VALUES( '09-0027', 'Southwest Covenant High School', 'rosslinda28@gmail.com');
+INSERT INTO teams (code, org, email)  VALUES( '09-0031', 'Gracemont HS', 'debrajsmith15@hotmail.com');
+INSERT INTO teams (code, org, email)  VALUES( '09-0032', 'Dimensions Academy High School', 'chrisj@norman.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0033', 'Southwest Covenant High School', 'rosslinda28@gmail.com');
+INSERT INTO teams (code, org, email)  VALUES( '09-0041', 'Yellowjacket Academy', 'apalesano@kingfisher.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0050', 'Alcott Middle School', 'rhooker@norman.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0057', 'Glenpool Alternative Program', 'mportillo@glenpool.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0063', 'Canadian Public Schools', 'ghost@canadian.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0072', 'Moore West Junior High', 'donnahaworth@mooreschools.com');
+INSERT INTO teams (code, org, email)  VALUES( '09-0075', 'Norman High School', 'daskey@norman.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0082', 'Arkansas School for Mathematics, Sciences and the Arts', 'FrankC@asmsa.org');
+INSERT INTO teams (code, org, email)  VALUES( '09-0083', 'Wayne Public School', 'connabors@wayne.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0084', 'Western Heights High School', 'jason.m.mcquerry@westernheights.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0087', 'Kingston Robotics', 'lmcdougal@kingston.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0092', 'Edison Preparatory School', 'doddfr@tulsaschool.org');
+INSERT INTO teams (code, org, email)  VALUES( '09-0104', 'Newman Smith High School', 'mcguilld@cfbisd.edu');
+INSERT INTO teams (code, org, email)  VALUES( '09-0119', 'RL Turner High School', 'culpd@cfbisd.edu');
+INSERT INTO teams (code, org, email)  VALUES( '09-0124', 'Irving Middle School', 'elainew2@norman.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0125', 'Howe Public Schools', 'carolannford@howe.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0132', 'Whittier Middle School', 'fbevers@norman.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0133', 'Whittier Middle School', 'fbevers@norman.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0167', 'Davenport High School', 'tcoon@davenport.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0168', 'Mounds High School', 'dcox@mounds.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0172', 'Southeast High School', 'jjmccann@okcps.org');
+INSERT INTO teams (code, org, email)  VALUES( '09-0173', 'Eastern Plains Education Enrichment Program', 'tmevans@plateautel.net');
+INSERT INTO teams (code, org, email)  VALUES( '09-0182', 'Robo Rappas', 'lajeanburnett@cablelynx.com');
+INSERT INTO teams (code, org, email)  VALUES( '09-0184', 'Longfellow Middle School', 'mattt@norman.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0197', 'Haileyvville Public School', 'psweetin@haileyville.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0221', 'Fort Gibson High School', 't_berres@ftgibson.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0222', 'Emerson High School', 'cgmenefee@okcps.org');
+INSERT INTO teams (code, org, email)  VALUES( '09-0233', 'Los Lunas Middle School', 'eb605@llschools.org');
+INSERT INTO teams (code, org, email)  VALUES( '09-0238', 'Cheyenne High School', 'Rland@cheyenne.k12.ok.us');
+INSERT INTO teams (code, org, email)  VALUES( '09-0253', 'Edmond North High School', 'stephen.mckinley@edmondschools.net');
+INSERt INTO teams (code, org, email) VALUES( '09-0255', 'Westmoore High School', 'jeffreybaughman@mooreschools.com');
+
+
+
+
+
+
+COMMIT;
+
+BEGIN;
+INSERT INTO games( id, wgame, wside , lgame , lside) 
+VALUES (1,3,'A',4,'A');
+INSERT INTO games( id, wgame, wside , lgame , lside) 
+VALUES (2,3,'B',4,'B');
+INSERT INTO games( id, wgame, wside , lgame , lside) 
+VALUES( 3,5,'A',6,'B');
+INSERT INTO games( id, wgame, wside , lgame , lside) 
+VALUES( 5,7,'A',7,'B');
+INSERT INTO games( id, wgame, wside , lgame , lside) 
+VALUES( 4,6,'A',0,0);
+INSERT INTO games( id, wgame, wside , lgame , lside) 
+VALUES( 6,5,'B',0,0 );
+INSERT INTO games( id, wgame, wside , lgame , lside) 
+VALUES( 7,0,0,0,0 );
+COMMIT;

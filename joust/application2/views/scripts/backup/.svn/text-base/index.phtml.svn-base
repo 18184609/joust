@@ -1,0 +1,17 @@
+
+
+
+<p>Backups are run whenever this page loads. Click below to reload and run backup</p>
+
+<input type="button" value="Run Backup" onClick="window.location.reload()">
+
+
+
+   <h3>Current Backups</h3>
+<table>
+   <? foreach( $this->backups as $backup ): ?>
+<tr><td>   <?= $backup ?></td></tr>
+   <? endforeach?>
+</table>
+
+

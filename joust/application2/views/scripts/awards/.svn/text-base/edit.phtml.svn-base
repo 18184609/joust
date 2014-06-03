@@ -1,0 +1,3 @@
+<?= $this->form ?>
+
+<a href= "<?= $this->baseUrl(); ?>/awards/delete?code=<?= $this->team->code ?>"> Delete?</a>

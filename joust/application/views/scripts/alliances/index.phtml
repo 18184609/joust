@@ -1,0 +1,46 @@
+
+
+
+
+<table class="results">
+
+<tr>
+<th>ID</th>
+<th>Team 1</th>
+<th>Team 2</th>
+
+<th>Match 1</th>
+<th>Match 2</th>
+<th>Match 3</th>
+
+
+
+ <!-- Loop through the entries that were provided to us by the controller -->
+ <? foreach ($this->alliances as $alliance): ?>
+  <tr>
+
+   <td style="text-align:left;"><a href="<?= $this->baseUrl(); ?>/alliances/edit?id=<?= $alliance['id']  ?>" > <?= $this->escape($alliance['id'])  ?></a></td>
+
+   <td><?= $this->escape($alliance['team1']) ?></td> 
+   <td><?= $this->escape($alliance['team2']) ?></td> 
+
+   <td><?= $this->escape($alliance['game1']) ?></td> 
+   <td><?= $this->escape($alliance['game2']) ?></td> 
+   <td><?= $this->escape($alliance['game3']) ?></td> 
+
+   <td></td> 
+
+    <? endforeach ?>  
+
+</table>
+
+
+<h2>Alliances Admin</h2>
+<ul>
+  <li><a href="<?= $this->baseUrl();?>/alliances/add">Add an Alliance to the tournament roster.</a></li>
+</ul>
+   
+
+
+
+

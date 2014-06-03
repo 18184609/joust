@@ -1,0 +1,68 @@
+<h2>Final Bracket </h2>
+<p>( <a href="<?= $this->baseUrl();?>/bracket/consolation">Click for consolation bracket.</a>) </p>  
+<p>( <a href="<?= $this->baseUrl();?>/bracket/">Click for main bracket.</a>) </p>  
+<div class="bracket" id="winners">
+
+
+
+<? $f1game = $this->fgames[0] ; ?>
+<? $f2game = $this->fgames[1] ; ?>
+<? $f3game = $this->fgames[2] ; ?>
+
+<div class="round phase-0" id="r3" >
+<div class="game">
+   <? // prepend a quote before hacking off the back so substr won't return flase for games where  sidea or  sideb = "bye" ?>
+
+   <div class="team-a"> 
+   <div class="team-name"><?= $this->escape(     substr( " ".$f1game['sidea'], -4)     );?>  <?= $this->escape( substr($f1game['sideaorg'], 0, 6) );?> 
+   </div>
+   </div>
+   
+   <div class="team-b"> 
+   <div class="team-name"><?= $this->escape(     substr( " ".$f1game['sideb'], -4)     ) ;?>  <?= $this->escape( substr($f1game['sideborg'], 0, 6) );?> 
+   </div>
+   </div>
+
+   <div class="game-number"> 
+   <a href="<?= $this->baseUrl(); ?>/games/score?game=<?= $this->escape($f1game['id']); ?>"><?= $this->escape($f1game['id']); ?></a>
+   </div> 
+</div>
+</div>
+
+
+<div class="round phase-0" id="r4" >
+<div class="game">
+   <? // prepend a quote before hacking off the back so substr won't return flase for games where  sidea or  sideb = "bye" ?>
+
+   <div class="team-a"> 
+   <div class="team-name"><?= $this->escape(     substr( " ".$f2game['sidea'], -4)     );?>  <?= $this->escape( substr($f2game['sideaorg'], 0, 6) );?> 
+   </div>
+   </div>
+   
+   <div class="team-b"> 
+   <div class="team-name"><?= $this->escape(     substr( " ".$f2game['sideb'], -4)     ) ;?>  <?= $this->escape( substr($f2game['sideborg'], 0, 6) );?> 
+   </div>
+   </div>
+
+   <div class="game-number"> 
+   <a href="<?= $this->baseUrl(); ?>/games/score?game=<?= $this->escape($f2game['id']); ?>"><?= $this->escape($f2game['id']); ?></a>
+   </div> 
+</div>
+</div>
+
+
+   <? // overall winner of the tournament gets promoted to this game  ?>
+<div class="round phase-0" id="r5" >
+<div class="game">
+   <div class="team-a"> 
+   <div class="team-name"><?= $this->escape(     substr( " ".$f3game['sidea'], -4)     );?>  <?= $this->escape( substr($f3game['sideaorg'], 0, 6) );?> 
+   </div>
+   </div>
+   
+
+</div>
+</div>
+
+
+
+</div> <!-- end of bracket -->

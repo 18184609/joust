@@ -1,0 +1,18 @@
+%head
+  %link{:rel => "stylesheet", :type => "text/css", :href => "bracket.css"}/
+
+- def log2(x)
+  - Math.log(x)/Math.log(2)
+
+- @bracket_size = 32
+
+.bracket#winners
+  - (log2(@bracket_size) + 1).to_i.times do |round|
+    .round.phase-0{:id => "r#{round+1}"}
+      - (@bracket_size/(2**round)).to_i.times do |game_number|
+        .game
+          .game-number= game_number
+          .team-a
+            .team-name Team A with a long name
+          .team-b
+            .team-name Team B

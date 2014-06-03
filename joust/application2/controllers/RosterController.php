@@ -1,0 +1,227 @@
+<?php
+
+class RosterController extends Zend_Controller_Action 
+{
+  
+  function indexAction()
+  {
+
+    $roster = new Roster();
+    $this->view->roster = $roster->fetchAll("org is not null ", "org");
+
+  }
+
+
+  public function uploadAction() 
+  {
+    $bodyCopy = "( If you're starting a new tournament, then this is exactly what you want. )" ; // messages back to the user
+    
+    $form = new RosterUploadForm();
+    
+    if ($this->_request->isPost()) {
+
+      // we got data, so we try to process it 
+
+      $formData = $this->_request->getPost();
+
+      if ($form->isValid($formData)) {  
+
+	// form is valid, process it 
+
+	$uploadedData = $form->getValues();
+	$filePath = $form->file->getFileName();
+	$areyousure = $form->areyousure;
+	
+	if (true == $areyousure->checked) { 
+	
+	  $this->_processUploadedTeams($filePath );
+	  $this->_redirect('teams');
+	}  else  { 
+
+	  // user wasn't sure, ask again
+
+	  $bodyCopy = "<p><b>You didn't check the \"are you sure\" box, so I'm giving you another oppurtunity to back out.</b> "; 
+	  $form->populate($formData);
+	}
+	
+      } else { 	
+
+	// form wasn't valid, ask again
+
+	$form->populate($formData);
+      }
+    }
+       
+    // display the form and the body copy message
+    $this->view->bodyCopy = $bodyCopy ;
+    $this->view->form = $form;
+    
+  }
+
+
+  function standingsAction()
+  {
+    $rosterDAO = new Roster;
+    $results = $rosterDAO->fetchAll();
+    $this->view->results = $results;
+  }
+
+  function awardsAction()
+  {
+    $rosterDAO = new Roster;
+
+
+    $allTeams = $rosterDAO->fetchAll($rosterDAO->select()->order('derank')); // all teams in derank order
+
+    $teamcount =  count($allTeams);  // total participants
+
+    $finalistCount= max( 4, 
+			 pow(2, floor(log($teamcount,2))-2 )) ; // 4 or the power of 2 less than the power of 2 less than or equal to half of the teams if
+
+    $this->view->docWinners = $rosterDAO->fetchAll($rosterDAO->select()->where("docrank <= 4") ->order('docrank'));
+    $this->view->deWinners = $rosterDAO->fetchAll($rosterDAO->select()->where("derank <=".$finalistCount) ->order('derank'));
+    $this->view->seedWinners = $rosterDAO->fetchAll($rosterDAO->select()->where("seedrank <=4") ->order('seedrank'));
+
+
+    // CALCULATING OVERALL WINNERS */
+
+    $overallScores=array();
+
+    foreach( $allTeams as $team) {
+
+      $doc =  $team->docscore ;  
+
+      //seed score component (2010)
+      // ranges from 0 to 1
+      $seed = (1/2)*(($teamcount - $team->seedrank + 1)/$teamcount) + (1/2)*($team->seedavg/$team->tmtseedmax);
+
+
+      // overall de component (2010)
+      // ranges from 0 to 1
+
+      $de = ($teamcount- $team->derank + 1)/ $teamcount ;
+
+
+      $myoverall = $doc+$seed+$de;  //final overall score
+
+
+
+      $overallScores[] = array( 'code' =>$team->code,
+				'org' =>$team->org,
+				'doc' =>$doc,
+				'seed'=>$seed,
+				'de'=>$de,
+				'overall' => $myoverall,
+				'overallrank'=>0 
+	);
+				
+    }
+
+    // DEBUG this needs to be something other than an inner functions
+    // DEBUG inner functions have global scope
+    function __cmpoverall( $a, $b) {
+      if ($a['overall'] == $b['overall'] ) { 
+	return ($a['code'] > $b['code']) ? -1 : 1;
+      } else {
+	return ($a['overall'] > $b['overall']) ? -1 : 1;
+      }
+    }
+
+    // Sort the scores so that the highest is first
+    usort($overallScores, "__cmpoverall");
+
+    $rank=1;
+    $lastScore=0;
+
+    // iterate through, assigning rank
+    // rank goes up as score goes down. 
+    foreach( $overallScores as &$myScore) {
+
+      if ($myScore['overall'] < $lastScore ) {
+	$rank++;
+      }
+
+      $myScore['overallrank'] = $rank;
+
+      $lastScore = $myScore['overall'];
+    }
+    unset( $myScore ); // unset reference for safety 
+
+    $this->view->overall = $overallScores;
+
+
+    $this->view->overallWinners=array();
+
+    // only the top 5 finishers get sent to be displayed
+
+    foreach( $overallScores as $score) {
+      if ( 5 >= $score['overallrank'] ) {
+	$this->view->overallWinners[] = $score;
+      }
+    }
+
+
+
+ }
+
+ 
+  function _processUploadedTeams($filePath ) {
+
+    $team_file = fopen($filePath, 'r');
+
+    
+    //TODO Check file headers to see if file properly formatted
+    $file_headers=fgetcsv($team_file);
+
+    
+    $teams=array();
+    while ( $row = fgetcsv($team_file) ) {
+      
+      
+      // TODO Check fileline for wellformedness
+      // TODO? should we access by column name or /Period X/ regex?
+      
+      $myteam = array();
+      $myteam['code'] = $row[1];
+      $myteam['name'] = $row[0];
+      $myteam['email'] = $row[5];
+      
+      // currently using Moodle to sum the scores for us 
+      // with the new scoring equations, everything is done with rank so we don't need to normalize
+      $myteam['P1'] = $row[6];
+      $myteam['P2'] = $row[7]; 
+      $myteam['P3'] = $row[8];
+      
+      $teams[$myteam['code'] ] = $myteam;
+
+
+      print_r($myteam);
+    }  
+    
+    
+     // get database handles for the teams and game tables
+    $teamDAO= new Teams(); 
+    $gameDAO= new Games();
+
+    $gameDAO->delete($where);   // delete all current games first (some database, someday, might enforce FK constraints)
+    $teamDAO->delete($where);   // delete all current teams
+
+
+    // load teams read from csv in to teams table
+    foreach( $teams as $myteam ) {
+	$row = $teamDAO->createRow();
+	$row->code =  $myteam['code'];
+	$row->org =  $myteam['name'];
+	$row->email = $myteam['email'];
+	$row->p1doc= $myteam['P1'];
+	$row->p2doc= $myteam['P2'];
+	$row->p3doc= $myteam['P3'];
+	$row->save();
+    }
+
+
+  }
+
+
+  
+}

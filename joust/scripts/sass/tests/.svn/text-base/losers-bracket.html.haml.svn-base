@@ -1,0 +1,28 @@
+%head
+  %link{:rel => "stylesheet", :type => "text/css", :href => "bracket.css"}/
+
+- def log2(x)
+  - Math.log(x)/Math.log(2)
+
+- @bracket_size = 32
+- @round_count = (log2(@bracket_size) + 1).to_i
+.bracket#consolation
+  - @round_count.times do |round|
+    - round += 2
+    .round.phase-1{:id => "r#{round}"}
+      - (@bracket_size/(2**(round-1))).to_i.times do |game_number|
+        .game
+          .game-number= game_number
+          .team-a
+            .team-name Team B
+          .team-b
+            .team-name Team B
+    .round.phase-2{:id => "r#{round}"}
+      - (@bracket_size/(2**(round-1))).to_i.times do |game_number|
+        .game
+          .game-number= game_number
+          .team-a
+            .team-name Team A
+          .team-b
+            .team-name Team B
+

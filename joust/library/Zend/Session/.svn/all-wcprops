@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/joust/!svn/ver/10/trunk/library/Zend/Session
+END
+Namespace.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/joust/!svn/ver/10/trunk/library/Zend/Session/Namespace.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/joust/!svn/ver/10/trunk/library/Zend/Session/Exception.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/joust/!svn/ver/10/trunk/library/Zend/Session/Abstract.php
+END

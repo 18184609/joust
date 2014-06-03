@@ -1,0 +1,25 @@
+<table class="results">
+  <tr>
+   <th>Team </th>
+   <th>Seed Avg</th> 
+   <th>Seed Rank</th>
+   <th>Doc Score</th>
+   <th>Doc Rank</th>
+   <th>DE Max</th>
+   <th>DE Rank</th>
+  </tr>
+
+ <!-- Loop through the entries that were provided to us by the controller -->
+ <? foreach ($this->results as $entry): ?>
+  <tr>
+   <td style="text-align:left;"><?= $this->escape($entry['code']) ?> </td> 
+   <td><?= $this->escape($entry['seedavg']) ?></td> 
+   <td><?= $this->escape($entry['seedrank']) ?></td> 
+   <td><?= $this->escape($entry['docscore']) ?></td> 
+   <td><?= $this->escape($entry['docrank']) ?></td>
+   <td><?= $this->escape($entry['demax']) ?></td>  
+   <td><?= $this->escape($entry['derank']) ?></td> 
+
+    <? endforeach ?>  
+
+</table>

@@ -1,0 +1,41 @@
+<?= $this->doctype() ?> <!-- Doctype  set inside the bootstrap file -->
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <!--  Editing out the auto-refresh on the admin side, as it gets annoying when entering special awards and other items. -->
+  <!--<? /*<meta http-equiv="Refresh" CONTENT="30">*/ ?> -->
+
+  <title>Botball Tournament</title>
+
+     <?= $this->headLink()->appendStylesheet($this->baseUrl().'/css/global.css', 'all') 
+     ->prependStylesheet($this->baseUrl().'/css/bracket.css', 'all') 
+     ->prependStylesheet($this->baseUrl().'/css/print.css', 'print'); ?>
+
+
+</head> 
+<body>
+
+<div id="header">
+	<h1><img src="../data/uploads/imgs/botball-logo.png" height="22"/> Oklahoma Regional Tournament</h1>
+</div>
+
+<div id="navmenu">
+<ul>
+<li> <a href="<?= $this->baseUrl(); ?>/teams/" id="teams">Teams</a></li>
+<li> <a href="<?= $this->baseUrl(); ?>/roster" id="roster">Seeding and Onsite</a></li>
+<li> <a href="<?= $this->baseUrl(); ?>/games" id="games">DE Games</a></li>
+<li> <a href="<?= $this->baseUrl(); ?>/bracket" id="bracket">DE Bracket</a></li>
+<li> <a href="<?= $this->baseUrl(); ?>/awards" id="awards">Special Awards</a></li>
+<li> <a href="<?= $this->baseUrl(); ?>/roster/awards" id="results">Tournament Results</a></li>
+</ul>
+</div>
+
+
+<?= $this->layout()->content ?>
+
+
+<div id="footer">
+</div>
+
+</body>
+</html>

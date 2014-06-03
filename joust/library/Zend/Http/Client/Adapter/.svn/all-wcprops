@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/joust/!svn/ver/10/trunk/library/Zend/Http/Client/Adapter
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/joust/!svn/ver/10/trunk/library/Zend/Http/Client/Adapter/Exception.php
+END
+Test.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/joust/!svn/ver/10/trunk/library/Zend/Http/Client/Adapter/Test.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/joust/!svn/ver/10/trunk/library/Zend/Http/Client/Adapter/Interface.php
+END
+Proxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/joust/!svn/ver/10/trunk/library/Zend/Http/Client/Adapter/Proxy.php
+END
+Socket.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/joust/!svn/ver/10/trunk/library/Zend/Http/Client/Adapter/Socket.php
+END

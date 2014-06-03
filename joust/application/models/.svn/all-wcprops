@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/joust/!svn/ver/87/trunk/application/models
+END
+Teams.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/joust/!svn/ver/10/trunk/application/models/Teams.php
+END
+Alliances.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/joust/!svn/ver/87/trunk/application/models/Alliances.php
+END
+Games.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/joust/!svn/ver/30/trunk/application/models/Games.php
+END
+Brackets.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/joust/!svn/ver/33/trunk/application/models/Brackets.php
+END
+Roster.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/joust/!svn/ver/10/trunk/application/models/Roster.php
+END
+Awards.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/joust/!svn/ver/33/trunk/application/models/Awards.php
+END

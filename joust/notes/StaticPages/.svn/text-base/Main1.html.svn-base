@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+</head>
+
+<body>
+<h1>Test Region Botball Tournament </h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Team</th>
+    <th>Team Code</th>
+    <th>Round 1</th> <th>Round 2</th> <th>Round 3</th>
+    <th>Seed Score</th> <th>Seed Rank</th>
+  </tr>
+
+  <tr>
+    <td><a href="TeamEdit.html">edit</a> </td> <td><a href="Team.html">Test Team</a></td>
+    <td>00-0001</td>
+    <td><a href="#">--</a></td> <td><a href="#">--</a></td> <td><a href="#">--</a></td> 
+    <td>--</td> <td>--</td>
+  </tr>
+
+  <tr>
+    <td><a href="TeamEdit.html">edit</a> </td> <td><a href="Team.html">Test Team</a></td>
+    <td>00-0002</td>
+    <td><a href="#">--</a></td> <td><a href="#">--</a></td> <td><a href="#">--</a></td> 
+    <td>--</td> <td>--</td>
+  </tr>
+
+  <tr>
+    <td><a href="TeamEdit.html">edit</a> </td> <td><a href="Team.html">Test Team</a></td>
+    <td>00-0003</td>
+    <td><a href="#">--</a></td> <td><a href="#">--</a></td> <td><a href="#">--</a></td> 
+    <td>--</td> <td>--</td>
+  </tr>
+
+  <tr>
+    <td><a href="TeamEdit.html">edit</a> </td> <td><a href="Team.html">Test Team</a></td>
+    <td>00-0004</td>
+    <td><a href="#">--</a></td> <td><a href="#">--</a></td> <td><a href="#">--</a></td> 
+    <td>--</td> <td>--</td>
+  </tr>
+  
+</table>
+
+
+<h3>Admin Tools</h3>
+<ul>
+  <li>New Team</li>
+  <li>Import Team CSV(moodle)</li>
+  <li>Export Backup</li>
+  <li><a href="BracketEdit.html">Make Brackets</a></li>
+  <li><a href="AwardsEdit.html">Edit Awards</a> 
+  <li><a href="Awards.html">View Awards</a> or <a href="Standings.html">View Standings</a>
+</ul>
+
+
+<h2>Notes:</h2>
+<p>Click Make Brackets to go to DE mode</p>
+<p>Here and else where, only logged in users will have access to Admin Tools or edit buttons</p>
+</body>
+</html>

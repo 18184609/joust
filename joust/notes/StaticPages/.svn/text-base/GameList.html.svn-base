@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+</head>
+
+<body>
+<h1>Game List</h1>
+
+  <h2><a href="Bracket-4.html">View Brackets</a> or <a href="Main2.html">Main Menu</a></h2>
+
+<h2>Unplayed</h2>
+<table>
+<tr><th>Game</th> <th>Bracket</th><th>Team A</th><td></td><th>Team B</th> <th>Victor</th>  </tr>
+<tr><td><a href="Game1.html">N</a></td><td>X</td><td>00-0000</td> <td>vs</td> <td>00-0000</td> <td>unk</td> </tr>
+<tr><td><a href="Game1.html">N</a></td><td>X</td><td>00-0000</td> <td>vs</td> <td>00-0000</td> <td>unk</td> </tr> 
+ </table>
+
+ <h2>Pending</h2>
+<table>
+<tr><th>Game</th> <th>Bracket</th><th>Team A</th><td></td><th>Team B</th> <th>Victor</th>  </tr>
+<tr><td>N</td><td>X</td><td>00-0000</td> <td>vs</td> <td>unk</td> <td>unk</td> </tr>
+<tr><td>N</td><td>X</td><td>unk</td> <td>vs</td> <td>unk</td> <td>unk</td> </tr> 
+ </table>
+
+<h2>Played</h2>
+<table>
+<tr><th>Game</th> <th>Bracket</th> <th>Team A</th><td></td><th>Team B</th> <th>Victor</th>  </tr>
+<tr><td><a href="Game1.html">N</a></td><td>X</td><td>00-0000</td> <td>vs</td> <td>00-0000</td> <td>00-0000</td> </tr>
+<tr><td><a href="Game1.html">N</a></td><td>X</td><td>00-0000</td> <td>vs</td> <td>00-0000</td> <td>00-0000</td> </tr> 
+ 
+</table>
+
+<h2>Notes:</h2>
+<p>Click game number to score game. </p>
+
+</body>
+</html>

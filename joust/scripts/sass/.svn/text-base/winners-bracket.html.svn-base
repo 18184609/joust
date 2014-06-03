@@ -1,0 +1,584 @@
+<head>
+  <link href='bracket.css' rel='stylesheet' type='text/css' />
+</head>
+<div class='bracket' id='winners'>
+  <div class='round phase-0' id='r1'>
+    <div class='game'>
+      <div class='game-number'>0</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>1</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>2</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>3</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>4</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>5</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>6</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>7</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>8</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>9</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>10</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>11</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>12</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>13</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>14</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>15</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>16</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>17</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>18</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>19</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>20</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>21</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>22</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>23</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>24</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>25</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>26</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>27</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>28</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>29</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>30</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>31</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+  </div>
+  <div class='round phase-0' id='r2'>
+    <div class='game'>
+      <div class='game-number'>0</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>1</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>2</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>3</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>4</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>5</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>6</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>7</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>8</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>9</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>10</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>11</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>12</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>13</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>14</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>15</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+  </div>
+  <div class='round phase-0' id='r3'>
+    <div class='game'>
+      <div class='game-number'>0</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>1</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>2</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>3</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>4</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>5</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>6</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>7</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+  </div>
+  <div class='round phase-0' id='r4'>
+    <div class='game'>
+      <div class='game-number'>0</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>1</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>2</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>3</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+  </div>
+  <div class='round phase-0' id='r5'>
+    <div class='game'>
+      <div class='game-number'>0</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+    <div class='game'>
+      <div class='game-number'>1</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+  </div>
+  <div class='round phase-0' id='r6'>
+    <div class='game'>
+      <div class='game-number'>0</div>
+      <div class='team-a'>
+        <div class='team-name'>Team A with a long name</div>
+      </div>
+      <div class='team-b'>
+        <div class='team-name'>Team B</div>
+      </div>
+    </div>
+  </div>
+</div>

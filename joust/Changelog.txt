@@ -1,0 +1,10 @@
+Joust 1.1.1
+
+
+May 21 2014
+-Edited out auto-refresh on admin side from the default layout file, in order to fix annoying refreshes while enterting special awards and other issues.
+
+April 9 2014
+-Fixed special awards issue that returned award type instead of the name after editing an award
+-Added "Oustanding Documentation" awards
+-Changed "Alliance" award to two different awards, "Alliance First Place" and "Alliance Second Place"

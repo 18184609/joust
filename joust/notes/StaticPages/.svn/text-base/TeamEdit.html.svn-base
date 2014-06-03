@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+</head>
+
+<body>
+<h1>Team Information</h1>
+
+<form action="#">
+<table>
+  <tr><th>Team</ht> <td> <input type="text" name="team" value="Test Team"></td> </tr>
+  <tr><th>Team Code</ht> <td><input type="text" name="teamcode" value="00-0000"></td> </tr>
+  <tr><th>Doc P1</th> <td> <input type="text" name="DP1" value="00"> </td> </tr>
+  <tr><th>Doc P2</th> <td> <input type="text" name="DP2" value="00"> </td> </tr>
+  <tr><th>Doc P3</th> <td> <input type="text" name="DP3" value="00"> </td> </tr>
+  <tr><th>Doc Onsite</th> <td> <input type="text" name="DOS" value="00"> </td> </tr>
+  <tr><th>Seeding R1</th> <td> <input type="text" name="SR1" value="00"> </td> </tr>
+  <tr><th>Seeding R2</th> <td> <input type="text" name="SR2" value="00"> </td> </tr>
+  <tr><th>Seeding R3</th> <td> <input type="text" name="SR3" value="00"> </td> </tr>
+</table>
+
+<input type="submit" value="Submit">
+
+
+</form>
+
+
+
+<h3>Admin Tools</h3>
+<ul>
+  <li>Delete Team </li>
+</ul>
+
+
+</body> </html>
