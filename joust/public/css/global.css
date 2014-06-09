@@ -9,20 +9,19 @@ div#winners , div#consolation {
 }
 
 #navmenu ul {
-    margin: 0;
-    padding: 0;
-    padding-left: 5px;
+    margin: 0.6em 0em 0em 0em;
+    padding-left: 0.25em;
     list-style-type: none; 
     list-style-image: none; 
 }
 
 #navmenu {
-    margin-top: -10px;
+    margin-top: -0.6em;
 }
 
 #navmenu li {
     display: inline-block;
-    margin: 10px 0px 10px 0px;
+    margin: 0.6em 0em 0.6em 0em;
 }
 
 #navmenu ul li a {
@@ -55,7 +54,7 @@ body {
 }
 
 #header h1 {
-    margin: 0em 0em 0.4em 0em;
+    margin: 0;
     padding-left: 0.5em;
 }
 
@@ -155,3 +154,105 @@ dt:after { content: ":"; }
 dd { margin: 0 0 0 110px; padding: 0 0 0.5em 0; }
 
 fieldset#fieldset-tournament {border:0;}
+
+#on-table {
+    float: left;
+    width: 550px;
+    height: 140px;
+    background-color: #f0f0f0;
+    clear: left;
+    margin-left: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0px 5px 5px #888888;
+    border: solid #009999 5px;
+}
+
+#ondeck {
+    display: inline-block;
+    float: left;
+    clear: both;
+    width: 550px;
+    height: 140px;
+    background-color: #f0f0f0;
+    margin-left: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0px 5px 5px #888888;
+    border: solid #FF7400 5px;
+}
+
+#next-div {
+    float: left;
+    clear: left;
+    margin-left: 0.5em;
+}
+
+#completed-div {
+    float:left; 
+    margin-left:1em;
+}
+
+#on-table-words {
+    float: left;
+    margin: 0em 0em 0em 0.3em;
+    padding: 0;
+}
+
+#ondeck-words {
+    float: left;
+    clear: left;
+    margin: 0.5em 0em 0em 0.3em;
+    padding: 0;
+}
+
+table.on-tables th{
+    margin-left: 10%;
+    text-align: Center; 
+}
+
+table.on-tables td{
+    text-align: Center; 
+}
+
+.gamediv {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 24.32%;
+    height: 100%;
+    border-right: solid #009999 2px;
+    text-align: center;
+}
+
+.lastgamediv {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 24%;
+    height: 100%;
+    text-align: center;
+    margin-left: 0.3em;
+}
+
+.gamediv p, .lastgamediv p, .gamediv2 p, .lastgamediv2 p {
+    margin-top: 0.2em;
+}
+
+.gamediv2 {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 24.32%;
+    height: 100%;
+    border-right: solid #FF7400 2px;
+    text-align: center;
+}
+
+.lastgamediv2 {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 24%;
+    height: 100%;
+    text-align: center;
+    margin-left: 0.3em;
+}
