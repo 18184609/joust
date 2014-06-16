@@ -4,7 +4,7 @@
     $entry = $this->unplayed[$i];
     echo '<div class="gamediv">
     <strong>Game ' . $this->escape($entry['id']) . '</strong> <br />
-      <span class="pink">' . $this->escape($entry['sidea']) . '</span><br /></span>'
+      <span class="pink">' . $this->escape($entry['sidea']) . '</span><br />'
       . $this->escape(substr($entry['sideaorg'], 0, 11)) . '<br />
       VS.<br /><span class="green">
       ' . $this->escape($entry['sideb']) . '</span><br />'
@@ -15,7 +15,7 @@
 <? $entry = $this->unplayed[$i];
     echo '<div class="lastgamediv">
    <strong>Game ' . $this->escape($entry['id']) . '</strong> <br />
-      <span class="pink">' . $this->escape($entry['sidea']) . '</span><br /></span>'
+      <span class="pink">' . $this->escape($entry['sidea']) . '</span><br />'
       . $this->escape(substr($entry['sideaorg'], 0, 11)) . '<br />
       VS.<br /><span class="green">
       ' . $this->escape($entry['sideb']) . '</span><br />'
@@ -29,7 +29,7 @@
     $entry = $this->unplayed[$i];
     echo '<div class="gamediv2">
     <strong>Game ' . $this->escape($entry['id']) . '</strong> <br />
-      <span class="pink">' . $this->escape($entry['sidea']) . '</span><br /></span>'
+      <span class="pink">' . $this->escape($entry['sidea']) . '</span><br />'
       . $this->escape(substr($entry['sideaorg'], 0, 11)) . '<br />
       VS.<br /><span class="green">
       ' . $this->escape($entry['sideb']) . '</span><br />'
@@ -40,7 +40,7 @@
   <? $entry = $this->unplayed[$i];
     echo '<div class="lastgamediv2">
     <strong>Game ' . $this->escape($entry['id']) . '</strong> <br />
-      <span class="pink">' . $this->escape($entry['sidea']) . '</span><br /></span>'
+      <span class="pink">' . $this->escape($entry['sidea']) . '</span><br />'
       . $this->escape(substr($entry['sideaorg'], 0, 11)) . '<br />
       VS.<br /><span class="green">
       ' . $this->escape($entry['sideb']) . '</span><br />'
@@ -65,17 +65,20 @@
    <th>Loss to</th>
   </tr>
 
-<? foreach ($this->unplayed as $entry): ?>
-<?php /*consolation games will be made pink */ ?>
-  <tr class="<?=( $this->escape($entry['consolation'] > 0) ? 'cgame' : '' ) ?>">
-  <?php /*<!--  <td><?= ( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] > 0) ? 'F' : '' ) ?></td> --> */ ?>
-    <td><?= $this->escape($entry['id']) ?></td> 
-    <td style="background-color:#ff99ff;"><?= $this->escape($entry['sidea'])  ?><br> <?= $this->escape(substr($entry['sideaorg'], 0, 11)) ?> </td> 
-    <td style="background-color:#99ff66;"><?= $this->escape($entry['sideb']) ?><br> <?= $this->escape(substr($entry['sideborg'], 0, 11)) ?> </td> 
-    <td><?= $this->escape($entry['wgame']) ?><?= $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['wside'])) ?></td> 
-    <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']).' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['lside'])) : "" ?></td> 
-  </tr>
-<? endforeach ?> 
+<?php for($i=8;$i<=400;$i++) {
+    $entry = $this->unplayed[$i];
+  /*consolation games will be made pink */
+  echo 
+  '<tr class="' . ($this->escape($entry['consolation'] > 0) ? 'cgame' : '') .  '" >' . 
+  /*<!--  <td>( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] > 0) ? 'F' : '' )</td> --> */
+    '<td>' . $this->escape($entry['id']) . '</td>
+    <td style="background-color:#ff99ff;">' . $this->escape($entry['sidea']) . '<br> ' . $this->escape(substr($entry['sideaorg'], 0, 11)) . '</td>
+    <td style="background-color:#99ff66;">' . $this->escape($entry['sideb']) . '<br> ' . $this->escape(substr($entry['sideborg'], 0, 11)) . '</td> 
+    <td>' . $this->escape($entry['wgame']) . ' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['wside'])) . '</td>
+    <td>' . (($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']) . ' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['lside'])) : "") . '</td>
+  </tr>';
+
+}?>
 </table>
 </div>
 
@@ -94,18 +97,17 @@
  <?php foreach ($this->played as $entry) {
   /* If this game was a bye, which is automatically resolved, then do not display it */
     if ($this->escape($entry['sidea']) !== 'bye' && $this->escape($entry['sideb']) !== 'bye') {
-        echo '<tr class="' . ($this->escape($entry['consolation']) ? 'cgame' : '') . '">' . 
-        /*<!--<td><?= $this->escape($entry['round']) ?> <?= ( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] >0) ? 'F' : '' ) ?> --></td> */
+      echo '<tr class="' . ($this->escape($entry['consolation']) ? 'cgame' : '') . '">' . 
+      /*<!--<td><?= $this->escape($entry['round']) ?> <?= ( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] >0) ? 'F' : '' ) ?> --></td> */
 
-        '<td>' . $this->escape($entry['id']) . '</td> 
-        <td style="background-color:#ff99ff;">' . $this->escape($entry['sidea']) . '<br>' . $this->escape(substr($entry['sideaorg'], 0, 12)) . '</td> 
-        <td style="background-color:#99ff66;">' . $this->escape($entry['sideb']) . '<br>' . $this->escape(substr($entry['sideborg'], 0, 12)) . '</td> 
-        <td class="victor">' . $this->escape($entry['victor']) . '</td>' . 
-        /*<!--  <td><?= $this->escape($entry['wgame']) ?> <?= $this->escape($entry['wside']) ?></td> 
-        <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']).'' . $this->escape($entry['lside']) : "" ?> </td> --> */
-        '</tr>';
-      } else {
-      }
+      '<td>' . $this->escape($entry['id']) . '</td> 
+      <td style="background-color:#ff99ff;">' . $this->escape($entry['sidea']) . '<br>' . $this->escape(substr($entry['sideaorg'], 0, 12)) . '</td> 
+      <td style="background-color:#99ff66;">' . $this->escape($entry['sideb']) . '<br>' . $this->escape(substr($entry['sideborg'], 0, 12)) . '</td> 
+      <td class="victor">' . $this->escape($entry['victor']) . '</td>' . 
+      /*<!--  <td><?= $this->escape($entry['wgame']) ?> <?= $this->escape($entry['wside']) ?></td> 
+      <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']).'' . $this->escape($entry['lside']) : "" ?> </td> --> */
+      '</tr>';
+    }
   } ?>  
 </table>
 

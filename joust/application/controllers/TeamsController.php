@@ -6,7 +6,10 @@ class TeamsController extends Zend_Controller_Action
   function indexAction()
   {
     $teams = new Teams();
-    $this->view->teams = $teams->fetchAll();;
+    $this->view->teams = $teams->fetchAll();
+
+    $roster = new Roster();
+    $this->view->roster = $roster->fetchAll("org is not null ", "org");
   }
 
   function addAction()
@@ -64,7 +67,7 @@ class TeamsController extends Zend_Controller_Action
 	  $row->seed3=$form->getValue('seed3');
 	  $row->save();
 	  
-	  $this->_redirect('roster');
+	  $this->_redirect('teams');
 	} else {
 	  $form->populate($formData);
       }
@@ -104,5 +107,4 @@ class TeamsController extends Zend_Controller_Action
 
 
   }
-
 }

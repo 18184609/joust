@@ -6,7 +6,7 @@ class GamesController extends Zend_Controller_Action
   function indexAction()
   {
     // automatically score playable byes at this point
-    $this->_scoreByes();
+    //$this->_scoreByes();
 
     $games = new Games();
     $games->select()->setIntegrityCheck(false);
@@ -66,7 +66,7 @@ class GamesController extends Zend_Controller_Action
 
 
   function autoAction() { 
-    $this->_scoreByes();   
+    //$this->_scoreByes();   
     $this->_scorePlayable();
   }
 

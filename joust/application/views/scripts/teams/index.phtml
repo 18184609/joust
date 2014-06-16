@@ -1,56 +1,50 @@
 
-
-
+<h3>Teams Admin</h3>
+<ul>
+  <li><a href="<?= $this->baseUrl();?>/roster/upload">Import teams for a new tournament</a></li>
+  <li><a href="<?= $this->baseUrl();?>/teams/add">Add a team to the tournament roster</a></li>
+</ul>
 
 <table class="results">
 
 <tr>
 <th>Team Code</th>
 <th>Organization</th>
-<th>email</th>
+<?php /*<th>email</th>*/ ?>
 
-<th>Period 1 Doc</th>
-<th>Period 2 Doc</th>
-<th>Period 3 Doc</th>
-<th>Onsite Doc</th>
+<th>P1 Doc</th>
+<th>P2 Doc</th>
+<th>P3 Doc</th>
+<th>Onsite</th>
 
 <th>S1</th>
 <th>S2</th>
 <th>S3</th>
+<th>Seed Avg</th> 
+<th>Seed Rank</th>
 
-
-
+</tr>
  <!-- Loop through the entries that were provided to us by the controller -->
- <? foreach ($this->teams as $team): ?>
-  <tr>
+ <?php foreach ($this->teams as $team) {
+  $code = $this->escape($team['code']);
+  $roster = new Roster();
+  $entry = $roster->fetchRow($roster->select()->where('code = ?', $code));
 
-   <td style="text-align:left;"><?= $this->escape($team['code']) ?></td> 
-   <td style="text-align:left;"><a href="<?= $this->baseUrl(); ?>/teams/edit?code=<?= $team['code']  ?>" > <?= $this->escape($team['org'])  ?></a></td>
-   <td style="text-align:left;"><?= $this->escape($team['email']) ?></td> 
+  echo '<tr>
 
-   <td><?= $this->escape($team['p1doc']) ?></td> 
-   <td><?= $this->escape($team['p2doc']) ?></td> 
-   <td><?= $this->escape($team['p3doc']) ?></td> 
-   <td><?= $this->escape($team['p4doc']) ?></td> 
+  <td style="text-align:left;">' . $this->escape($team['code']) . '</td> 
+  <td style="text-align:left;"><a href="' . $this->baseUrl() . '/teams/edit?code=' . $team['code'] . '" >' . $this->escape($team['org']) . '</a></td>' . 
+  /*<td style="text-align:left;"><?= $this->escape($team['email']) ?></td>*/
 
-   <td><?= $this->escape($team['seed1']) ?></td> 
-   <td><?= $this->escape($team['seed2']) ?></td> 
-   <td><?= $this->escape($team['seed3']) ?></td> 
+  '<td>' . $this->escape($team['p1doc']) . '</td>
+  <td>' . $this->escape($team['p2doc']) . '</td>
+  <td>' . $this->escape($team['p3doc']) . '</td>
+  <td>' . $this->escape($team['p4doc']) . '</td>
 
-   <td></td> 
-
-    <? endforeach ?>  
-
+  <td>' . $this->escape($team['seed1']) . '</td>
+  <td>' . $this->escape($team['seed2']) . '</td>
+  <td>' . $this->escape($team['seed3']) . '</td>
+  <td>' . $this->escape($entry['seedavg']) . '</td>
+  <td>' . $this->escape($entry['seedrank']) . '</td>'
+  ;}?> 
 </table>
-
-
-<h2>Teams Admin</h2>
-<ul>
-  <li><a href="<?= $this->baseUrl();?>/roster/upload">Import teams for a new tournament.</a></li>
-  <li><a href="<?= $this->baseUrl();?>/teams/add">Add a team to the tournament roster.</a></li>
-</ul>
-   
-
-
-
-

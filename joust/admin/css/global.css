@@ -41,6 +41,15 @@ div#winners , div#consolation {
     padding: .4em;
 }
 
+
+h3, h2 {
+    margin-left: 0.3em;
+}
+
+#upload {
+    margin-left: 0.3em;
+}
+
 body {
     margin: 0;
     padding: 0;
