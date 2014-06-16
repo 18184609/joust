@@ -65,8 +65,11 @@
    <th>Loss to</th>
   </tr>
 
-<?php for($i=8;$i<=400;$i++) {
-    $entry = $this->unplayed[$i];
+<?php 
+
+for($i=8;$i<count($this->unplayed);$i++) {
+  $entry = $this->unplayed[$i];
+
   /*consolation games will be made pink */
   echo 
   '<tr class="' . ($this->escape($entry['consolation'] > 0) ? 'cgame' : '') .  '" >' . 
@@ -77,7 +80,6 @@
     <td>' . $this->escape($entry['wgame']) . ' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['wside'])) . '</td>
     <td>' . (($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']) . ' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['lside'])) : "") . '</td>
   </tr>';
-
 }?>
 </table>
 </div>

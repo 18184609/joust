@@ -78,6 +78,9 @@ table.game-table td.victor {
 table#next-up td, table#completed td {
     border-right: 2px solid gray;
     border-bottom: 2px solid gray;
+    -moz-box-shadow: 0px 5px 5px #888888;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0px 5px 5px #888888;
     box-shadow: 0px 5px 5px #888888;
 }
 
@@ -113,9 +116,7 @@ table#next-up tr:last-child td:last-child, table#completed tr:last-child td:last
     -webkit-border-bottom-right-radius: 6px;
 }
 
-table#next-up tr:last-child td, table#completed tr:last-child td{
-    box-shadow: 0px 5px 5px #888888;
-}
+
 
 tr.on-deck td {
     background: blue;
