@@ -75,8 +75,8 @@ for($i=8;$i<count($this->unplayed);$i++) {
   '<tr class="' . ($this->escape($entry['consolation'] > 0) ? 'cgame' : '') .  '" >' . 
   /*<!--  <td>( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] > 0) ? 'F' : '' )</td> --> */
     '<td>' . $this->escape($entry['id']) . '</td>
-    <td style="background-color:#ff99ff;">' . $this->escape($entry['sidea']) . '<br> ' . $this->escape(substr($entry['sideaorg'], 0, 11)) . '</td>
-    <td style="background-color:#99ff66;">' . $this->escape($entry['sideb']) . '<br> ' . $this->escape(substr($entry['sideborg'], 0, 11)) . '</td> 
+    <td style="background-color:#ff99ff;">' . $this->escape($entry['sidea']) . '<br>' . $this->escape(substr($entry['sideaorg'], 0, 11)) . '</td>
+    <td style="background-color:#99ff66;">' . $this->escape($entry['sideb']) . '<br>' . $this->escape(substr($entry['sideborg'], 0, 11)) . '</td> 
     <td>' . $this->escape($entry['wgame']) . ' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['wside'])) . '</td>
     <td>' . (($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']) . ' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['lside'])) : "") . '</td>
   </tr>';

@@ -1,6 +1,6 @@
 
 
-<div style="float:left;">
+<div id="next-div">
 <h2>Next Up</h2>
 
 <table class="game-table" id="next-up">
@@ -12,35 +12,34 @@
    <th>Loss to</th>
   </tr>
 
-
-
  <? foreach ($this->unplayed as $entry): ?>
 
-<!-- consolation games will be made pink -->
-  <tr class="<?=( $this->escape($entry['consolation'] > 0) ? 'cgame' : '' ) ?>">
-  <!--  <td><?= ( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] > 0) ? 'F' : '' ) ?></td> -->
+<?php /* consolation games will be made pink */ ?>
+  <tr class="<?=($this->escape($entry['consolation'] > 0) ? 'cgame' : '' ) ?>">
+  <?php /*<td><?= ( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] > 0) ? 'F' : '' ) ?></td> */ ?>
     <td><a href="<?= $this->baseUrl(); ?>/games/score?game=<?= $entry['id'] ?>"><?= $this->escape($entry['id']) ?></a></td> 
    <td style="background-color:#ff99ff;"><?= $this->escape($entry['sidea'])  ?><br> <?= $this->escape(substr($entry['sideaorg'], 0, 6)) ?> </td> 
     <td style="background-color:#99ff66;"><?= $this->escape($entry['sideb']) ?><br> <?= $this->escape(substr($entry['sideborg'], 0, 6)) ?> </td> 
     <td><?= $this->escape($entry['wgame']) ?> <?= $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['wside'])) ?></td> 
-    <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']).' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['lside'])) : "" ?> </td> 
+    <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']). ' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['lside'])) : "" ?></td> 
   </tr>
 <? endforeach ?>  
 </table>
 
 </div>
 
-<div style="float:left; margin-left:1em">
+<div id="completed-div">
   <h2>Completed</h2>
 
-<table class="game-table">
+<table class="game-table" id="completed">
   <tr> 
     <th>Round</th>
-    <th>Game</th> <th>Pink Side</th> <th>Teal Side</th> 
+    <th>Game</th> <th>Pink Side</th> <th>Green Side</th> 
     <th>Victor</th> <th>Win to</th> <th>Loss to</th>
   </tr>
  <? foreach ($this->played as $entry): ?>
-  <tr>
+<?php /* consolation games will be made pink */ ?>
+  <tr class="<?=($this->escape($entry['consolation'] > 0) ? 'cgame' : '' ) ?>">
 
    <td><?= $this->escape($entry['round']) ?> <?= ( $this->escape($entry['consolation'] > 0) ? 'C' : '' ) ?><?= ( $this->escape($entry['final'] > 0) ? 'F' : '' ) ?>
 </td> 
@@ -49,7 +48,7 @@
     <td style="background-color:#99ff66;"><?= $this->escape($entry['sideb']) ?><br> <?= $this->escape(substr($entry['sideborg'], 0, 12)) ?></td> 
     <td class="victor"><?= $this->escape($entry['victor']) ?></td> 
     <td><?= $this->escape($entry['wgame']) ?> <?= $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['wside'])) ?></td> 
-   <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']).' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['lside'])) : "" ?> </td> 
+   <td><?= ($entry['lgame'] > 0 ) ? $this->escape($entry['lgame']).' ' . $this->escape(str_replace(array('A', 'B'), array('P', 'G'), $entry['lside'])) : "" ?></td> 
   </tr>
 <? endforeach ?>  
 </table>
